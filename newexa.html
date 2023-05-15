@@ -1,0 +1,48 @@
+<DOCTYPE! html>
+	<html>
+	<head>
+		
+	<style>
+		.a1{
+
+			background-color:mediumpurple;
+			width:450px;
+			height:450px;
+			font-size:100px;
+
+		}
+
+
+	</style>
+
+		<script>
+
+            function mouseUst() {
+
+				document.getElementById('div1').style.backgroundColor = "hotpink";
+				document.getElementById('yazi').innerHTML = "ÜSTÜNDE";
+				document.getElementById('div1').style.color = "white";
+				document.getElementById('div1').style.width = "650";
+				document.getElementById('div1').style.height = "650";
+			}
+
+            function mouseDis() {
+
+                document.getElementById('div1').style.backgroundColor = "mediumpurple";
+                document.getElementById('yazi').innerHTML = "DIÞINDA";
+				document.getElementById('div1').style.color = "black";
+                document.getElementById('div1').style.width = "450px";
+                document.getElementById('div1').style.height = "450px";
+            }
+
+		</script>
+	
+	</head>
+
+	<body>
+        <div class="a1" id="div1" onmouseover="mouseUst()" onmouseout="mouseDis()">
+            <p id="yazi">out</ p>
+</div>
+
+</body>
+</html>
